@@ -30,3 +30,12 @@ function showCurrentContent(ind) {
 //     bottom.classList.toggle("shadow");
 // }
 // console.log(up);
+
+const videoBtn = document.querySelector('.video__button');
+const video= document.querySelector('video');
+
+videoBtn.addEventListener('click', function () {
+    video.play();
+    console.log('playing');
+    videoBtn.style.display = 'none'
+})

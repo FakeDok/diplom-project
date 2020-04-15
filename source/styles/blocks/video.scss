@@ -1,0 +1,16 @@
+.video{
+  background-color: #2f2d35;
+}
+.video__button{
+  background-image: linear-gradient( rgba(49, 29, 94,0.5)), url(../img/forest.png);
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.video__movie{
+}
