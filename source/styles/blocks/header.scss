@@ -1,0 +1,103 @@
+.header{
+    padding-top:50px;
+    width: 100%;
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    z-index: 2;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        background-image: url(../img/company-logo.png);
+        width: 44px;
+        height: 50px;
+    }
+    &__name-logo{
+        font-size: 30px;
+        color: #4aa3cc;
+        margin-left: 10px;
+    }
+    &__menu{
+        display: flex;
+        opacity: 1;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+    }
+    &__right{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    &__menu-discription{
+        margin: 0px 30px;
+        font-size: 13px;
+        color: #ffffff;
+        cursor:pointer;
+    }
+    &__menu-discription:hover{
+        color: #00e0d0;
+    }
+}
+.burger-icon{
+    cursor: pointer;
+    display: none;
+    width: 30px;
+    height: 21px;
+    background-color: red($color: #000000);
+}
+.menu-burger{
+    display: none;
+}
+.menu-burger:checked + .header__menu{
+    opacity: 1;
+}
+@media(max-width:1024px){
+    .header{
+        &__menu-discription{
+            margin: 0px 15px;
+            font-size: 13px;
+        }
+    }
+}
+@media(max-width:768px){
+    .header{
+        &__menu-discription{
+            margin: 0px 5px;
+            font-size: 13px;
+        }
+    }
+}
+@media(max-width:426px){
+    .header{
+        &__left{
+            align-self: flex-start;
+        }
+        &__right{
+            display: flex;
+            flex-direction: column;
+        }
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+        }
+        &__menu-discription{
+            margin-top: 15px;
+            font-size: 13px;
+            color: #ffffff;
+            cursor:pointer;
+        }
+    }
+    .burger-icon{
+        cursor: pointer;
+        display: block;
+        width: 30px;
+        height: 21px;
+        background-color: red($color: #000000);
+    }
+}

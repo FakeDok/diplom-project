@@ -1,0 +1,86 @@
+.works{
+    padding: 60px 0px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0px;
+    }
+    &__title{
+        font-size: 22px;
+        color: #413d4b;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+    }
+    &__subtitle{
+        font-size: 14px;
+        color: #413d4b;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+    &__all-pictures{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow: hidden;
+        justify-items: center;
+    }
+    &__pictures{
+        width: 253px;
+        height: 241px;
+        background-size: cover;
+    }
+    &__button{
+        font-size: 16px;
+        color: #00e0d0;
+        background: none;
+        border: none;
+        padding: 15px 10px;
+        margin-top: 40px;
+        font-family: 'Hammersmith One', sans-serif;
+        font-weight: 400;
+    }
+    &__tea{
+        background-image: url(../img/tea.png);
+    }
+    &__bottles{
+        background-image: url(../img/bottles.png);
+    }
+    &__book{
+        background-image: url(../img/book.png);
+    }
+    &__card{
+        background-image: url(../img/card.png);
+    }
+}
+@media(max-width:1024px){
+    .works{
+        &__all-pictures{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+        }
+    }
+}
+@media(max-width:768px){
+    .works{
+        &__all-pictures{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+@media(max-width:426px){
+    .works{
+        &__all-pictures{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 0px 20px;
+        }
+        &__title{
+            padding-bottom: 20px;
+    }
+}
+}

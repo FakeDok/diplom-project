@@ -1,0 +1,124 @@
+.team{
+    padding: 70px 0px;
+    background-image: linear-gradient( rgba(49, 29, 94,0.5)), url(../img/forest.png);
+    background-size: cover;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        font-size: 22px;
+        color: #ffffff;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+    }
+    &__subtitle{
+        font-size: 14px;
+        color: #ffffff;
+        margin: 10px 0px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+    }
+    &__line{
+        width: 50px;
+        height: 2px;
+        background-color: #ffffff;
+    }
+    &__all-people{
+        display: flex;
+        justify-content: center;
+    }
+    &__people{
+        margin: 40px 20px;
+        border: 1px #ffffff solid;
+    }
+    &__bottom{
+        padding-top: 50px;
+    }
+    &__discription{
+        color: #f3f3f3;
+        font-size: 14px;
+        padding: 20px 0px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+    &__button{
+        font-size: 16px;
+        color: #00e0d0;
+        background: none;
+        border: none;
+        padding: 15px 10px;
+        font-family: 'Hammersmith One', sans-serif;
+        font-weight: 400;
+    }
+}
+.team-people{
+    &__foto{
+        width: 220px;
+        height: 229px;
+        background-repeat: round;
+        margin: 5px;
+    }
+    &__name{
+        font-size: 14px;
+        color: #ffffff;
+        padding-top: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+    &__prof{
+        font-size: 13px;
+        color: #fafafa;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+    &__black{
+        background-image: url(../img/men-black.png);
+        background-size: cover;
+    }
+    &__women{
+        background-image: url(../img/women.png);
+    }
+    &__t-shirt{
+        background-image: url(../img/men-t-shirt.png);
+    }
+    &__women-glass{
+        background-image: url(../img/women-glass.png);
+    }
+}
+@media(max-width:1024px){
+    .team-people{
+        &__foto{
+            width: 150px;
+            height: 159px;
+        }
+    }
+}
+@media(max-width:768px){
+    .team-people{
+        &__foto{
+            width: 105px;
+            height: 114px;
+        }
+    }
+}
+@media(max-width:426px){
+    .team{
+        &__all-people{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__people{
+            margin: 20px 0px;
+        }
+    }
+    .team-people{
+        &__foto{
+        width: 141px;
+        height: 150px;
+        }
+    }
+}

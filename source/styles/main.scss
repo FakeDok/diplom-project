@@ -1,0 +1,36 @@
+@import 'blocks/header.scss';
+@import 'blocks/home.scss';
+@import 'blocks/about.scss';
+@import 'blocks/video.scss';
+@import 'blocks/expertise.scss';
+@import 'blocks/team.scss';
+@import 'blocks/works.scss';
+@import 'blocks/testimonial.scss';
+@import 'blocks/contact.scss';
+@import 'blocks/footer.scss';
+@font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.eot?76085440');
+      src: url('../font/fontello.eot?76085440#iefix') format('embedded-opentype'),
+           url('../font/fontello.woff?76085440') format('woff'),
+           url('../font/fontello.ttf?76085440') format('truetype'),
+           url('../font/fontello.svg?76085440#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+*{
+    box-sizing: border-box;
+  }
+body{
+    margin: 0 auto;
+    text-align: center;
+  }
+.container{
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+  }
+a{
+    color: #ffffff;
+    text-decoration: none;
+  }

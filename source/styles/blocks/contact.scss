@@ -1,0 +1,126 @@
+.contact{
+    padding: 70px 0px;
+    &__column{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+    }
+    &__column-left{
+        display: flex;
+        flex-direction: column;
+    }
+    &__message{
+        height: 200px;
+    }
+}
+.column-left{
+    &__title{
+        font-size: 22px;
+        color: #413d4b;
+        padding-bottom: 50px;
+        text-align: start;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+    }
+    &__input{
+        font-size: 14px;
+        color: #413d4b;
+        padding: 15px;
+        margin-bottom: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+    &__button{
+        font-size: 16px;
+        color: #00e0d0;
+        background: none;
+        border: 1px #00e0d0 solid;
+        width: 120px;
+        height: 40px;
+        font-weight: 400;
+        font-family: 'Hammersmith One', sans-serif;
+    }
+}
+.column-right{
+    &__title{
+        font-size: 22px;
+        color: #413d4b;
+        padding-bottom: 50px;
+        text-align: start;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+    }
+    &__all-logo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    &__logo{
+        width: 160px;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &__zara{
+        background-image: url(../img/zara.png);
+    }
+    &__mango{
+        background-image: url(../img/mango.png);
+    }
+    &__newyork{
+        background-image: url(../img/newyork.png);
+    }
+    &__gucci{
+        background-image: url(../img/gucci.png);
+    }
+    &__calvinklein{
+        background-image: url(../img/calvinklein.png);
+    }
+    &__nike{
+        background-image: url(../img/nike.png);
+    }
+    &__converse{
+        background-image: url(../img/converse.png);
+    }
+    &__puma{
+        background-image: url(../img/puma.png);
+    }
+    &__levis{
+        background-image: url(../img/levis.png);
+    }
+    &__bong{
+        background-image: url(../img/bong.png);
+    }
+}
+@media(max-width:768px){
+    .contact{
+        &__message{
+            height: 100px;
+        }
+    }
+    .column-right{
+        &__logo{
+            width: 100px;
+            height: 50px;
+        }
+    }
+    .column-left{
+        &__input{
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media(max-width:426px){
+    .contact{
+        padding: 60px 0px;
+        &__column{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        &__column-left{
+            padding-bottom: 30px;
+        }
+    }
+}
