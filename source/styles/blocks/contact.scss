@@ -29,16 +29,23 @@
         margin-bottom: 20px;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
+        text-align: start;
     }
     &__button{
         font-size: 16px;
         color: #00e0d0;
         background: none;
-        border: 1px #00e0d0 solid;
+        border: none;
         width: 120px;
         height: 40px;
         font-weight: 400;
         font-family: 'Hammersmith One', sans-serif;
+        &:hover{
+            color: #ffffff;
+            background: #00e0d0;
+            transition: 2s;
+            border-radius: 30px;
+        }
     }
 }
 .column-right{
@@ -55,12 +62,14 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
+        justify-items: center;
     }
     &__logo{
         width: 160px;
         height: 70px;
         background-repeat: no-repeat;
         background-size: contain;
+        cursor: pointer;
     }
     &__zara{
         background-image: url(../img/zara.png);
@@ -93,6 +102,14 @@
         background-image: url(../img/bong.png);
     }
 }
+@media(max-width:900px){
+    .column-right{
+        &__logo{
+            width: 150px;
+            height: 100px;
+        }
+    }
+}
 @media(max-width:768px){
     .contact{
         &__message{
@@ -112,7 +129,15 @@
         }
     }
 }
-@media(max-width:426px){
+@media(max-width:600px){
+    .column-right{
+        &__logo{
+            width: 90px;
+            height: 40px;
+        }
+    }
+}
+@media(max-width:570px){
     .contact{
         padding: 60px 0px;
         &__column{
@@ -121,6 +146,20 @@
         }
         &__column-left{
             padding-bottom: 30px;
+        }
+    }
+    .column-right{
+        &__logo{
+            width: 160px;
+            height: 70px;
+        }
+    }
+}
+@media(max-width:426px){
+    .column-right{
+        &__logo{
+            width: 100px;
+            height: 50px;
         }
     }
 }

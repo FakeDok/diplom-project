@@ -35,11 +35,16 @@
         margin-right: 10px;
         font-family: 'fontello';
         cursor: pointer;
+        &:hover{
+            background-color: #00e0d0;
+            transition: 0.5s;
+        }
     }
 }
 .top-column{
     &__left-logo{
         display: flex;
+        align-items: center;
     }
     &__left-company{
         width: 44px;
@@ -79,6 +84,10 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         line-height: 26px;
+        &:hover{
+            font-size: 30px;
+            transition: 1s;
+        }
     }
     &__center-number::before{
         content: "✆";
@@ -96,16 +105,22 @@
         padding: 10px;
         background: none;
         border: 1px white solid;
+        color: #ffffff;
     }
     &__right-input::-webkit-input-placeholder {
         color: #ffffff;
     }
     &__right-button{
-        padding: 20px 30px;
-        background-color: #ffffff;
+        font-size: 25px;
+        color: #ffffff;
+        background-color: rgba($color: #ffffff, $alpha: 0.3);
+        padding: 0px 20px;
         border: none;
-        opacity: 0.5;
         margin-left: 5px;
+        &:hover{
+            background-color: #00e0d0;
+            transition: 0.5s;
+        }
     }
     &__right-network{
         padding-top: 20px;
@@ -121,6 +136,11 @@
     }
     &__left-support{
         margin-right: 15px;
+        cursor: pointer;
+        &:hover{
+            color: #00e0d0;
+            transition: 0.5s;
+        }
     }
 }
 @media(max-width:768px){
@@ -136,6 +156,42 @@
         }
     }
 }
+@media(max-width:670px){
+    .footer{
+        &__bottom-column{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    .bottom-column{
+        &__left{
+            padding-bottom: 20px;
+        }
+    }
+}
+@media(max-width:600px){
+    .footer{
+        &__top-column{
+            display: grid;
+            grid-template-columns: 1fr; 
+            justify-items: center;
+            text-align: center;
+        }
+    }
+    .top-column{
+        &__left-logo{
+            justify-content: center;
+        }
+        &__center-adress{
+            padding-top: 10px;
+        }
+        &__right-window{
+            padding-top: 20px;
+        }
+    }
+}
 @media(max-width:426px){
     .footer{
         &__icon{
@@ -145,11 +201,6 @@
         &__top-column{
             display: grid;
             grid-template-columns: 1fr; 
-        }
-        &__bottom-column{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
         }
     }
     .top-column{

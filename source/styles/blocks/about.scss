@@ -32,6 +32,12 @@
         padding: 15px 10px;
         font-family: 'Hammersmith One', sans-serif;
         font-weight: 400;
+        &:hover{
+            color: #ffffff;
+            background: #00e0d0;
+            transition: 2s;
+            border-radius: 30px;
+        }
     }
 }
 .left-column__pictures{
@@ -42,15 +48,8 @@
     background-size: cover;
 }
 @media(max-width:768px){
-    .left-column__pictures{
-        width: 160px;
-        height: 160px;
-
-    }
-}
-@media(max-width:426px){
     .about{
-        padding: 50px 0px;
+        padding: 0px;
         &__column{
             display: flex;
             flex-direction: column;
@@ -60,5 +59,10 @@
             text-align: center;
             margin: 20px 0px;
         }
+    }
+    .left-column__pictures{
+        width: 160px;
+        height: 160px;
+
     }
 }

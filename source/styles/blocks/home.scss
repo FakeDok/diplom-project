@@ -29,6 +29,18 @@
         font-weight: 300;
         line-height: 24px;
     }
+    &__image-two-slide{
+        background-image: url(../img/book.png);
+        width: 213px;
+        height: 201px;
+        background-size: cover;
+    }
+    &__image-four-slide{
+        background-image: url(../img/card.png);
+        width: 213px;
+        height: 201px;
+        background-size: cover;
+    }
     &__button{
         font-size: 16px;
         color: #00e0d0;
@@ -37,9 +49,15 @@
         padding: 15px 10px;
         font-family: 'Hammersmith One', sans-serif;
         font-weight: 400;
+        &:hover{
+            color: #ffffff;
+            background: #00e0d0;
+            transition: 2s;
+            border-radius: 30px;
+        }
     }
     &__bottom{
-        padding-top: 150px;
+        padding-top: 100px;
         display: flex;
         justify-content: center;
     }
@@ -53,14 +71,12 @@
     }
     &__circle:hover{
         background-color: #00e0d0;
+        transition: 0.5s;
     }
 }
-.shadow{
-    background-color: red;
-}
-@media(max-width:426px){
+@media(max-width:760px){
     .home{
-        padding-top: 200px;
+        padding-top: 210px;
         &__line{
             margin: 10px 0px;
         }

@@ -1,16 +1,62 @@
 .video{
-  background-color: #2f2d35;
+    &__button{
+      background-image: linear-gradient( rgba(49, 29, 94,0.5)), url(../img/forest.png);
+      background-size: cover;
+      height: 500px;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__button-discription {
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      padding: 15px;
+      cursor: pointer;
+      background: none;
+      color: #ffffff;
+      &:hover{
+        background-color: rgba(0, 224, 208, 0.5);
+        transition: 1s;
+      }
+    }
+    &__movie{
+      height: 500px;
+      width: 100%;
+    }
 }
-.video__button{
-  background-image: linear-gradient( rgba(49, 29, 94,0.5)), url(../img/forest.png);
-  height: 500px;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
+@media(max-width:1024px){
+  .video{
+    &__button{
+      height: 400px;
+    }
+    &__movie{
+      height: 400px;
+      width: 100%;
+    }
 }
-.video__movie{
+}
+@media(max-width:768px){
+  .video{
+    &__button{
+      height: 300px;
+    }
+    &__movie{
+      height: 300px;
+      width: 100%;
+    }
+}
+}
+@media(max-width:426px){
+  .video{
+    &__button{
+      height: 200px;
+    }
+    &__movie{
+      height: 200px;
+      width: 100%;
+    }
+}
 }
